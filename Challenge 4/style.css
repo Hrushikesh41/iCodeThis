@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+body{
+    background-color: rgb(20, 16, 39);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.main-app{
+    background-color: rgb(13, 11, 31);
+    color: white;
+    width: 35%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    height: 40%;
+}
+
+.main-app .boxes{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 70%;
+    font-size: 0.8rem;
+}
+
+.boxes .inner-box{
+    width: 30%;
+    background-color: rgb(20, 16, 39);
+    height: 70%;
+    margin: 1rem;
+    border-radius: 10px;
+}
+
+.inner-box .image{
+    height: 80%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner-box .image img{
+    height: 60%;
+    margin-top: 10px;
+}
+
+.main-app .btn{
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.btn button{
+    width: 40%;
+    padding: 0.5rem;
+    border-radius: 10px;
+    border: 1px solid rgb(0, 174, 255);
+    background-color: rgb(20, 16, 39);
+    color: rgb(0, 174, 255);
+}
+
+.boxes .inner-box:hover{
+    transform: scale(1.15);
+}
+
+.btn button:hover{
+    transform: scale(1.05);
+}
+
+@media screen and (max-width : 500px) {
+    .main-app{
+        width: 100%;
+        height: 100%;
+        gap: 2rem;
+    }
+
+    .main-app .title{
+        height: 20%;
+        margin-bottom: 1rem;
+    }
+
+    .main-app .boxes{
+        display: flex;
+        flex-direction: column;
+        height: 30%;
+        margin-top: 2rem;
+    }
+
+    .boxes .inner-box{
+        width: 70%;
+    }
+
+    .main-app .btn{
+        margin-top: 10rem;
+    }
+}
+
+@media screen and (min-width : 501px) and (max-width : 1000px) {
+    .main-app{
+        height: 50%;
+        width: 90%;
+    }
+}
+
+@media screen and (min-width : 1001px) {
+    .main-app {
+        height: 50%;
+        width: 40%;
+    }
+}
